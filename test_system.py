@@ -42,7 +42,7 @@ def test_detection():
 
 def test_agents():
     """Test AI agents"""
-    print("\n🤖 Testing AI Agents...")
+    print("\n Testing AI Agents...")
     
     from src.agents.reasoning import ReasoningAgent
     from src.agents.context import ContextAgent, MockStorageClient
@@ -173,7 +173,7 @@ def main():
     all_passed = all(success for _, success in results)
     
     if all_passed:
-        print("\n🎉 All systems operational!")
+        print("\n All systems operational!")
         print("\nNext steps:")
         print("1. Run full demo: python src/demo.py")
         print("2. Review README.md for architecture details")

@@ -35,7 +35,7 @@ def scenario_credential_stuffing():
     - VPN/foreign IP
     """
     print("\n" + "="*70)
-    print("📋 SCENARIO 1: Credential Stuffing Attack")
+    print("SCENARIO 1: Credential Stuffing Attack")
     print("="*70 + "\n")
     
     detector = SuspiciousLoginDetector()
@@ -89,7 +89,7 @@ def scenario_api_abuse():
     - Outside normal usage pattern
     """
     print("\n" + "="*70)
-    print("📋 SCENARIO 2: Bulk Data Extraction via API")
+    print("SCENARIO 2: Bulk Data Extraction via API")
     print("="*70 + "\n")
     
     detector = AbnormalAPIDetector()
@@ -142,7 +142,7 @@ def scenario_privilege_escalation():
     - Admin command execution
     """
     print("\n" + "="*70)
-    print("📋 SCENARIO 3: Privilege Escalation")
+    print(" Privilege Escalation")
     print("="*70 + "\n")
     
     detector = PrivilegeEscalationDetector()
@@ -205,7 +205,7 @@ def scenario_false_positive():
     Demonstrates system's ability to identify ambiguous cases
     """
     print("\n" + "="*70)
-    print("📋 SCENARIO 4: Potential False Positive (Traveling Employee)")
+    print("SCENARIO 4: Potential False Positive (Traveling Employee)")
     print("="*70 + "\n")
     
     detector = SuspiciousLoginDetector()

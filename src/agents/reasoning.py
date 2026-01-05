@@ -341,7 +341,7 @@ def format_risk_assessment_for_display(assessment: RiskAssessment) -> str:
 RISK LEVEL: {assessment.risk_level.value.upper()} ({assessment.risk_score}/100)
 ATTACK PATTERN: {assessment.attack_pattern}
 
-📊 ANALYSIS:
+ANALYSIS:
 {assessment.reasoning}
 
 FALSE POSITIVE LIKELIHOOD: {assessment.false_positive_likelihood.upper()}
@@ -352,10 +352,10 @@ FALSE POSITIVE LIKELIHOOD: {assessment.false_positive_likelihood.upper()}
 {'  CONTRADICTING EVIDENCE:' if assessment.confidence_factors.get('contradicting') else ''}
 {chr(10).join(f"  • {factor}" for factor in assessment.confidence_factors.get('contradicting', []))}
 
-❓ MISSING CONTEXT:
+ MISSING CONTEXT:
 {chr(10).join(f"  • {ctx}" for ctx in assessment.missing_context)}
 
-💡 RECOMMENDED ACTIONS:
+ RECOMMENDED ACTIONS:
 {chr(10).join(f"  {i+1}. {action}" for i, action in enumerate(assessment.recommended_actions))}
 """
     return output.strip()

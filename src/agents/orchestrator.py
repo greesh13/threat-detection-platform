@@ -124,7 +124,7 @@ class AgentOrchestrator:
 
 ALERT ID: {alert.alert_id}
 THREAT TYPE: {alert.threat_type.value}
-SEVERITY: {alert.severity.value.upper()}
+SEVERITY: {alert.severity.value}
 DETECTION CONFIDENCE: {alert.confidence}/100
 
 AFFECTED ENTITY:
@@ -138,7 +138,7 @@ DETECTION SIGNALS:
 {format_risk_assessment_for_display(assessment)}
 
 {'='*70}
-💡 RECOMMENDED ACTION
+ RECOMMENDED ACTION
 {'='*70}
 
 ACTION: {action.action_type.value.upper()}
