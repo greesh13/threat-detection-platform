@@ -6,6 +6,10 @@
 
 **Core principle:** *Deterministic pipelines generate security signals. AI agents sit on top to investigate, reduce noise, and orchestrate response — with humans in the loop.*
 
+## Demo
+
+![Demo](Demo/Demo.gif)
+
 ## 1. What Threats Are Detected?
 
 The system detects three critical threat categories:
